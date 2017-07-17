@@ -24,3 +24,5 @@ aldeed:collection2
 aldeed:autoform
 twbs:bootstrap
 tap:i18n
+kadira:flow-router
+kadira:blaze-layout
