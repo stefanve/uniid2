@@ -9,5 +9,9 @@
   "pages": {
     "add_merchant": "Add merchant",
     "welcome-to-uniid": "Yo!"
+  },
+  "ui": {
+    "add-merchant": "Hoho"
   }
+
 }

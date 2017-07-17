@@ -26,3 +26,6 @@ twbs:bootstrap
 tap:i18n
 kadira:flow-router
 kadira:blaze-layout
+accounts-base
+accounts-ui
+accounts-password

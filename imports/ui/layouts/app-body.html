@@ -1,3 +1,27 @@
 <template name="App_body">
-Hi main
+    <div class="nav navbar">
+        <a href="/">Home</a>
+        {{> loginButtons}}
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" style="background-color: red">Left nav</div>
+            <div class="col-md-7" style="background-color: fuchsia">
+
+
+                {{#if Template.subscriptionsReady}}
+                    {{> Template.dynamic template=main}}
+                {{else}}
+                    {{> App_loading}}
+                {{/if}}
+            </div>
+            <div class="col-md-2" style="background-color: red">Right, alright</div>
+        </div>
+
+
+
+
+    </div>
+
+
 </template>

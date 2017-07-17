@@ -6,6 +6,8 @@ import '/imports/ui/layouts/app-body.js';
 
 import '/imports/ui/customer/add-customer.js';
 import '/imports/ui/merchant/add-merchant.js';
+import '/imports/ui/components/loading.js';
+import '/imports/ui/pages/startpage.js';
 
 // Import to override accounts templates
 //import '../../ui/accounts/accounts-templates.js';
@@ -13,7 +15,7 @@ import '/imports/ui/merchant/add-merchant.js';
 FlowRouter.route('/', {
   name: 'App.home',
   action() {
-    BlazeLayout.render('App_body', { main: 'app_rootRedirector' });
+    BlazeLayout.render('App_body', { main: 'startpage' });
   },
 });
 
@@ -25,7 +27,7 @@ FlowRouter.notFound = {
 };
 
 
-FlowRouter.route('/merchants/add', {
+FlowRouter.route('/merchant/add', {
     name: 'Merchants.register',
     action() {
         BlazeLayout.render('App_body', { main: 'addMerchant' });

@@ -1,0 +1,12 @@
+<template name="startpage">
+
+    <h1> {{_ "pages.welcome-to-uniid"}}</h1>
+   <a href="/merchant/add" class="js-add-merchant">{{_ "ui.add-merchant"}}</a>
+    <ul>
+    {{#each merchants}}
+            <li>
+                {{name}}
+            </li>
+    {{/each}}
+    </ul>
+</template>
