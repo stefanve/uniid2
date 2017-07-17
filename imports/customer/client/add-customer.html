@@ -1,0 +1,8 @@
+<template name="addCustomer">
+
+    {{#autoForm collection="Customers" id="addCustomer" type="insert" autocomplete="off"}}
+        {{#each afFieldNames}}
+            {{> afQuickField name=this.name}}
+        {{/each}}
+    {{/autoForm}}
+</template>

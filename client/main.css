@@ -1,1 +1,3 @@
 /* CSS declarations go here */
+[data-required] label:before {content: '* '; color: red}
+

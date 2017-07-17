@@ -1,0 +1,13 @@
+{
+  "forms" : {
+    "name": "Name",
+    "address" : {
+      "address":  "Address",
+      "street":  "Street"
+    }
+  },
+  "pages": {
+    "add_merchant": "Add merchant",
+    "welcome-to-uniid": "Yo!"
+  }
+}

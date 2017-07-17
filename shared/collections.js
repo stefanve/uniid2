@@ -15,6 +15,7 @@ Schemas.Address = new SimpleSchema({
         type: String,
         label: "House number",
         optional: true
+
     },
     zip: {
         type: String,
@@ -38,7 +39,7 @@ Schemas.Merchant = new SimpleSchema({
     name: {
         type: String,
 
-        optional: true
+        optional: false
     },
     website_url:{
         type: String,
@@ -56,6 +57,11 @@ Schemas.Customer = new SimpleSchema({
         type: String,
 
         optional: true
+    },
+    customer_id: {
+        type: String,
+        label: "Customer Id",
+        optional: false
     },
     address: {
         type: Schemas.Address

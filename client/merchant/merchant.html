@@ -2,22 +2,15 @@
 
     <div class="panel panel-primary">
         <div class="panel-heading">
-            New merchant
+            {{_ "pages.add_merchant"}}
         </div>
         <div class="panel-body">
             {{#autoForm collection="Merchants" id="addMerchant" type="insert" autocomplete="off"}}
                 {{#each afFieldNames}}
                     {{> afQuickField name=this.name}}
                 {{/each}}
+                <button type="submit">Go</button>
             {{/autoForm}}
         </div>
     </div>
-</template>
-<template name="addCustomer">
-
-    {{#autoForm collection="Customers" id="addCustomer" type="insert" autocomplete="off"}}
-        {{#each afFieldNames}}
-            {{> afQuickField name=this.name}}
-        {{/each}}
-    {{/autoForm}}
 </template>
