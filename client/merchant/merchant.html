@@ -1,0 +1,23 @@
+<template name="addMerchant">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            New merchant
+        </div>
+        <div class="panel-body">
+            {{#autoForm collection="Merchants" id="addMerchant" type="insert" autocomplete="off"}}
+                {{#each afFieldNames}}
+                    {{> afQuickField name=this.name}}
+                {{/each}}
+            {{/autoForm}}
+        </div>
+    </div>
+</template>
+<template name="addCustomer">
+
+    {{#autoForm collection="Customers" id="addCustomer" type="insert" autocomplete="off"}}
+        {{#each afFieldNames}}
+            {{> afQuickField name=this.name}}
+        {{/each}}
+    {{/autoForm}}
+</template>
