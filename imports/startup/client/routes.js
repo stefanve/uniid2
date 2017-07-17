@@ -5,6 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '/imports/ui/layouts/app-body.js';
 
 import '/imports/ui/customer/add-customer.js';
+import '/imports/ui/merchant/add-merchant.js';
 
 // Import to override accounts templates
 //import '../../ui/accounts/accounts-templates.js';
